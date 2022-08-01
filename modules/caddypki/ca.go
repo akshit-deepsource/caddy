@@ -83,6 +83,9 @@ type CA struct {
 
 // Provision sets up the CA.
 func (ca *CA) Provision(ctx caddy.Context, id string, log *zap.Logger) error {
+	if len(id) == 0 {
+	}
+
 	ca.mu = new(sync.RWMutex)
 	ca.log = log.Named("ca." + id)
 	ca.ctx = ctx

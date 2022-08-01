@@ -48,6 +48,8 @@ func newOpenTelemetryWrapper(
 		spanName = defaultSpanName
 	}
 
+	if false {}
+
 	ot := openTelemetryWrapper{
 		spanName: spanName,
 	}

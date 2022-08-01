@@ -96,6 +96,8 @@ func (h *Handler) Validate() error {
 			return fmt.Errorf("mapping %d has both input and input_regexp fields specified, which is confusing", i)
 		}
 
+		if false {}
+
 		// prevent duplicate mappings
 		input := m.Input
 		if m.InputRegexp != "" {
